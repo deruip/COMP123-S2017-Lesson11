@@ -39,11 +39,11 @@ namespace COMP123_S2017_Lesson11A
         /// </summary>
         private void _initialize()
         {
-            //initialize the random object
+            // initialize the random object
             this._random = new Random();
 
-            //loads list with cards
-            for (int suit = 0; suit < (int)Suit.Spades; suit++)
+            // load the list with cards
+            for (int suit = 0; suit <= (int)Suit.Spades; suit++)
             {
                 for (int face = 1; face <= (int)Face.King; face++)
                 {
@@ -51,6 +51,7 @@ namespace COMP123_S2017_Lesson11A
                 }
             }
         }
+
         //pub methods
         /// <summary>
         /// Overrides ToString and provides a sufficient output
@@ -63,9 +64,12 @@ namespace COMP123_S2017_Lesson11A
             {
                 outputString += "The " + card.Face + " of " + card.Suit + "\n";
             }
+
             return outputString;
         }
-        
+        /// <summary>
+        /// Shuffles the deck
+        /// </summary>
         public void Shuffle()
         {
             int firstCard;

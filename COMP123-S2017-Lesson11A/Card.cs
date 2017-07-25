@@ -62,7 +62,7 @@ namespace COMP123_S2017_Lesson11A
         /// <returns></returns>
         public object Clone()
         {
-            return new Card(this._face, this._suit);
+            return new Card(this.Face, this.Suit);
         }
 
     }
