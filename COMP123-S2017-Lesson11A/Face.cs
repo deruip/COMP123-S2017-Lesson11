@@ -22,8 +22,8 @@ namespace COMP123_S2017_Lesson11A
         Eight,
         Nine,
         Ten,
-        Jack = 11,
-        Queen = 12,
-        King = 13
+        Jack,
+        Queen,
+        King
     }
 }

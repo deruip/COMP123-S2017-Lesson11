@@ -1,10 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="COMP123_S2017_Lesson11A.Card">
-    <Position X="8" Y="1.5" Width="1.5" />
+    <Position X="8" Y="1.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COMP123_S2017_Lesson11A.Deck">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="COMP123_S2017_Lesson11A.Suit">
@@ -15,7 +22,7 @@
     </TypeIdentifier>
   </Enum>
   <Enum Name="COMP123_S2017_Lesson11A.Face">
-    <Position X="6" Y="1.5" Width="1.5" />
+    <Position X="5.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
       <FileName>Face.cs</FileName>
