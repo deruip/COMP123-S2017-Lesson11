@@ -6,11 +6,11 @@ using System.Text;
  * Name: Aron Ly
  * Date: July 25, 2017
  * Description: Card class for card shuffling and dealing simulation
- * Version: 0.1 - Created the Card class
+ * Version: 0.2 - Added Clone method
  */
 namespace COMP123_S2017_Lesson11A
 {
-    public class Card
+    public class Card : ICloneable
     {
         //private instance variables
         private Face _face;
@@ -56,7 +56,14 @@ namespace COMP123_S2017_Lesson11A
 
 
         //public methods
-
+        /// <summary>
+        /// returns a copy (clone) of the current card
+        /// </summary>
+        /// <returns></returns>
+        public object Clone()
+        {
+            return new Card(this._face, this._suit);
+        }
 
     }
 }
