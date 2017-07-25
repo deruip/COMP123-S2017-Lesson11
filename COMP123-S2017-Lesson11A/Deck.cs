@@ -26,13 +26,13 @@ namespace COMP123_S2017_Lesson11A
         }
         //priv methods
         /// <summary>
-        /// Adds new cards to this List
+        /// Loads all the cards
         /// </summary>
         private void _initialize()
         {
             for (int suit = 0; suit < (int)Suit.Spades; suit++)
             {
-                for (int face = 1; face < (int)Face.King; face++)
+                for (int face = 1; face <= (int)Face.King; face++)
                 {
                     this.Add(new Card((Face)face, (Suit)suit));
                 }

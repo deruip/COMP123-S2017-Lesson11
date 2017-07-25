@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name: Aron Ly
  * Date: July 25, 2017
  * Description: Demo for Lesson 11
- * Version: 0.1 - Driver class
+ * Version: 0.2 - Implemented Deck class
  */
 namespace COMP123_S2017_Lesson11A
 {
@@ -15,6 +15,8 @@ namespace COMP123_S2017_Lesson11A
     {
         static void Main(string[] args)
         {
+            Deck deck = new Deck();
+            Console.WriteLine(deck.ToString());
         }
     }
 }
