@@ -5,7 +5,7 @@ using System.Text;
 /*
  * Name: Aron Ly
  * Date: July 25, 2017
- * Description: Inherits from Card class, This Deck class is a new List type - Card
+ * Description: Deck class. Inherits from CardList superclass
  * Version: 0.4 - Refactored Deck class to inherit from CardList
  */
 namespace COMP123_S2017_Lesson11A
@@ -59,6 +59,8 @@ namespace COMP123_S2017_Lesson11A
         public override string ToString()
         {
             string outputString = "";
+            outputString += "The deck contains:\n";
+            outputString += "=========================================================\n";
 
             foreach (Card card in this)
             {
