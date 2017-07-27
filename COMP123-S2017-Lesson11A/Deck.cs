@@ -6,7 +6,7 @@ using System.Text;
  * Name: Aron Ly
  * Date: July 25, 2017
  * Description: Deck class. Inherits from CardList superclass
- * Version: 0.5 - Added Deal1 Method from Hand class
+ * Version: 0.6 - Added Deal5 Method
  */
 namespace COMP123_S2017_Lesson11A
 {
@@ -91,6 +91,27 @@ namespace COMP123_S2017_Lesson11A
             Card firstCard = (Card)this[0].Clone();
             this.RemoveAt(0); //removes the top card
             return firstCard;
+        }
+        /// <summary>
+        /// This method returns the top five cards in a new Hand and removes the top five cards from the List
+        /// </summary>
+        public Hand Deal5()
+        {
+            Card firstCard = (Card)this[0].Clone();
+            Card secondCard = (Card)this[1].Clone();
+            Card thirdCard = (Card)this[2].Clone();
+            Card fourthCard = (Card)this[3].Clone();
+            Card fifthCard = (Card)this[4].Clone();
+            this.RemoveRange(0, 5);
+            Hand hand = new Hand
+            {
+                firstCard,
+                secondCard,
+                thirdCard,
+                fourthCard,
+                fifthCard
+            };
+            return hand;
         }
     }
 }
