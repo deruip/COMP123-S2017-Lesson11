@@ -17,17 +17,19 @@ namespace COMP123_S2017_Lesson11A
         {
             Hand hand = new Hand(); //new empty hand container
             Deck deck = new Deck();
-            Console.WriteLine(deck.ToString());
-            Console.WriteLine();
             deck.Shuffle();
-            Console.WriteLine(deck.ToString());
+            Console.WriteLine(deck);
             Console.WriteLine();
 
-            Console.WriteLine("Testing");
-            hand = deck.Deal5(); //creates new Hand object and assigns the top five cards to it
+            Console.WriteLine("Testing Deal5 Method:");
+            hand = deck.Deal5(); //assigns top five cards of deck to hand object
             Console.WriteLine(hand);
             Console.WriteLine("After Dealing:");
-            Console.WriteLine(deck.ToString());
+            Console.WriteLine(deck);
+
+            Console.WriteLine("Testing HighestCards method:");
+            Console.WriteLine(hand);
+            hand.HighestCards();
         }
     }
 }
