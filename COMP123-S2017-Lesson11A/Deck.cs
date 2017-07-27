@@ -6,11 +6,11 @@ using System.Text;
  * Name: Aron Ly
  * Date: July 25, 2017
  * Description: Inherits from Card class, This Deck class is a new List type - Card
- * Version: 0.2 - Added public Shuffle method
+ * Version: 0.4 - Refactored Deck class to inherit from CardList
  */
 namespace COMP123_S2017_Lesson11A
 {
-    public class Deck : List<Card>
+    public class Deck : CardList
     {
         //priv instance var
         private Random _random;
@@ -37,7 +37,7 @@ namespace COMP123_S2017_Lesson11A
         /// <summary>
         /// initializes class variables and list of cards
         /// </summary>
-        private void _initialize()
+        protected override void _initialize()
         {
             // initialize the random object
             this._random = new Random();
