@@ -23,14 +23,10 @@ namespace COMP123_S2017_Lesson11A
             Console.WriteLine(deck.ToString());
             Console.WriteLine();
 
-            //hand.Add(deck.Deal1()); //deal one card from the top of the deck
-            //Console.WriteLine(hand.ToString());
-            //Console.WriteLine();
-            //hand.Add(deck.Deal1()); //deal one card from the top of the deck
-            //Console.WriteLine(hand.ToString());
             Console.WriteLine("Testing");
             hand = deck.Deal5(); //creates new Hand object and assigns the top five cards to it
             Console.WriteLine(hand);
+            Console.WriteLine("After Dealing:");
             Console.WriteLine(deck.ToString());
         }
     }
