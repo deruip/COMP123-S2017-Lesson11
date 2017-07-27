@@ -46,6 +46,7 @@ namespace COMP123_S2017_Lesson11A
         /// </summary>
         public void HighestCards()
         {
+            //ordered list from greatest face value to least face value
             var Highest =
                 from Card in this
                 orderby Card.Face descending
@@ -53,7 +54,7 @@ namespace COMP123_S2017_Lesson11A
 
             Console.WriteLine("The cards with the greatest face value:");
             Console.WriteLine("=========================================================");
-            foreach (var item in this)
+            foreach (var item in this) //goes through elements of Hand list to check for cards that match the highest face value and prints them
             {
                 if (item.Face == Highest.First())
                 {

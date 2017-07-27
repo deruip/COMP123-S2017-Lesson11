@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name: Aron Ly
  * Date: July 25, 2017
  * Description: Demo for Lesson 11
- * Version: 0.4 - Tested Deal5 method of Deck class
+ * Version: 0.5 - Implemented testing of HighestCards method
  */
 namespace COMP123_S2017_Lesson11A
 {
@@ -18,6 +18,7 @@ namespace COMP123_S2017_Lesson11A
             Hand hand = new Hand(); //new empty hand container
             Deck deck = new Deck();
             deck.Shuffle();
+            Console.WriteLine("Before Dealing:");
             Console.WriteLine(deck);
             Console.WriteLine();
 
