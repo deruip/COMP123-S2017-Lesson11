@@ -6,7 +6,7 @@ using System.Text;
  * Name: Aron Ly
  * Date: July 27, 2017
  * Description: Hand Class that inherits from CardList superclass
- * Version: 0.1 - Class created
+ * Version: 0.2 - Moved Deal1 method to Deck class
  */
 namespace COMP123_S2017_Lesson11A
 {

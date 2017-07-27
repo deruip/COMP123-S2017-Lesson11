@@ -6,7 +6,7 @@ using System.Text;
  * Name: Aron Ly
  * Date: July 25, 2017
  * Description: Deck class. Inherits from CardList superclass
- * Version: 0.4 - Refactored Deck class to inherit from CardList
+ * Version: 0.5 - Added Deal1 Method from Hand class
  */
 namespace COMP123_S2017_Lesson11A
 {
@@ -26,13 +26,7 @@ namespace COMP123_S2017_Lesson11A
         //pub props
 
         //constructors
-        /// <summary>
-        /// Main constructor for Deck class
-        /// </summary>
-        public Deck()
-        {
-            this._initialize();
-        }
+
         //priv methods
         /// <summary>
         /// initializes class variables and list of cards
@@ -88,6 +82,15 @@ namespace COMP123_S2017_Lesson11A
                 this[firstCard].Face = tempCard.Face;
                 this[firstCard].Suit = tempCard.Suit;
             }
+        }
+        /// <summary>
+        /// This method removes the card in element 0 from the List and returns it in var firstCard
+        /// </summary>
+        public Card Deal1()
+        {
+            Card firstCard = (Card)this[0].Clone();
+            this.RemoveAt(0); //removes the top card
+            return firstCard;
         }
     }
 }
